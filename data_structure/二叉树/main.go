@@ -22,8 +22,29 @@ func Create()  {
 	root.Left=leftNode
 	root.Right=rightNode
 	root.PrintBT()
+	fmt.Println()
 }
+
+func Operation()  {
+	var op btree.Operate
+	op=root
+	fmt.Println("The Depth is:",op.Depth())
+	fmt.Println("The nums of leaf:",op.LeafCount())
+}
+
+func Order()  {
+	var or btree.Order
+	or=root
+	or.PreOrder()
+	fmt.Println("先序：")
+	or.InOrder()
+	fmt.Println("中序：")
+	or.PostOrder()
+	fmt.Println("后序：")
+
 
 func main()  {
 	Create()
+	Operation()
+	Order()
 }

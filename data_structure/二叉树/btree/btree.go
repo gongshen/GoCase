@@ -93,7 +93,7 @@ func LeafCount(n *Node)int  {
 
 func PreOrder(n *Node)  {
 	if n!=nil{
-		fmt.Printf("Data:%v",n.Data)
+		fmt.Printf("%v	",n.Data)
 		PreOrder(n.Left)
 		PreOrder(n.Right)
 	}
@@ -102,7 +102,7 @@ func PreOrder(n *Node)  {
 func InOrder(n *Node)  {
 	if n!=nil{
 		InOrder(n.Left)
-		fmt.Printf("Data:%v",n.Data)
+		fmt.Printf("%v	",n.Data)
 		InOrder(n.Right)
 	}
 }
@@ -111,6 +111,6 @@ func PostOrder(n *Node)  {
 	if n!=nil{
 		PostOrder(n.Left)
 		PostOrder(n.Right)
-		fmt.Printf("Data:%v",n.Data)
+		fmt.Printf("%v	",n.Data)
 	}
 }
