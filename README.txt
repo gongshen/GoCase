@@ -1,1 +1,0 @@
-#The instance of go programming!
