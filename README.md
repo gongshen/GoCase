@@ -18,6 +18,7 @@
 	- [chan_value](https://github.com/gongshen/GoCase/tree/master/goroutine_channel/chan_val)
 6. 反射
 	- [通用函数模板](https://github.com/gongshen/GoCase/tree/master/reflect/makefunc%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
+	- [动态调用函数](https://github.com/gongshen/GoCase/blob/master/reflect/%E5%8A%A8%E6%80%81%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95/main.go)
 7. 接口
 	- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/part1.md)
 	- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
