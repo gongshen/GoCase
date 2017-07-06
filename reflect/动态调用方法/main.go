@@ -6,11 +6,25 @@ import (
 )
 
 func main() {
-	u := User{1, "gongshen", 21}
+	u := User{1, "GS", 22}
 	v := reflect.ValueOf(u)
 	mv := v.MethodByName("Hello") //调用方法
-	args := []reflect.Value{reflect.ValueOf("lutianqi")}
-	mv.Call(args) //调用Call，传入slice
+	/*
+	//第一种方法
+	mv.Call([]reflect.Value{
+		reflect.ValueOf("中文"),
+		reflect.ValueOf(20),
+		reflect.ValueOf(false),
+		reflect.ValueOf(3.1415927),
+		reflect.ValueOf(v),
+	})
+	*/
+	//第二种方法
+	out:=mv.CallSlice([]reflect.Value{
+		reflect.ValueOf("%s=%d"),
+		reflect.ValueOf([]interface{}{"x",20}),
+	})
+	fmt.Println(out)
 }
 
 type User struct {
@@ -19,6 +33,6 @@ type User struct {
 	Age  int
 }
 
-func (u User) Hello(name string) {
-	fmt.Println("Hello", name, "my name is", u.Name)
+func (u User) Hello(str string,a ...interface{})string{
+	return fmt.Sprintf(str,a...)
 }
