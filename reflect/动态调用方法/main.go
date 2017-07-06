@@ -11,12 +11,10 @@ func main() {
 	mv := v.MethodByName("Hello") //调用方法
 	/*
 	//第一种方法
-	mv.Call([]reflect.Value{
-		reflect.ValueOf("中文"),
+	out:=mv.Call([]reflect.Value{
+		reflect.ValueOf("%s=%d"),
+		reflect.ValueOf("x"),
 		reflect.ValueOf(20),
-		reflect.ValueOf(false),
-		reflect.ValueOf(3.1415927),
-		reflect.ValueOf(v),
 	})
 	*/
 	//第二种方法
