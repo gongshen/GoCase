@@ -1,32 +1,45 @@
 package main
 
 import (
-	"fmt"
 	"reflect"
+	"strings"
+	"fmt"
 )
 
-func main() {
-	//swap是传递给makefunc工作的
-	swap := func(in []reflect.Value) []reflect.Value {
-		return []reflect.Value{in[1], in[0]}
+func add(args []reflect.Value)(result []reflect.Value){
+	if len(args)==0{
+		return nil
 	}
-	makeSwap := func(fptr interface{}) {
-		//获取函数本身
-		fn := reflect.ValueOf(fptr).Elem()
-		v := reflect.MakeFunc(fn.Type(), swap)
-		//分配给fn显示v
-		fn.Set(v)
+	var ret reflect.Value
+	switch args[0].Kind() {
+	case reflect.Int:
+		n:=0
+		for _,i:=range args{
+			n+=int(i.Int())
+		}
+		ret=reflect.ValueOf(n)
+	case reflect.String:
+		var ss=make([]string,0,len(args))
+		for _,s:=range args{
+			ss=append(ss,s.String())
+		}
+		ret=reflect.ValueOf(strings.Join(ss,""))
 	}
+	result=append(result,ret)
+	return
+}
 
-	// Make and call a swap function for ints.
-	var intSwap func(int, int) (int, int)
-	makeSwap(&intSwap)
-	//将参数0，1转换成值，调用swap
-	fmt.Println(intSwap(0, 1))
+func makeAdd(ftpr interface{})  {
+	fn:=reflect.ValueOf(ftpr).Elem()
+	v:=reflect.MakeFunc(fn.Type(),add)
+	fn.Set(v)
+}
 
-	// Make and call a swap function for float64s.
-	var floatSwap func(float64, float64) (float64, float64)
-	makeSwap(&floatSwap)
-	fmt.Println(floatSwap(2.72, 3.14))
-
+func main()  {
+	var intAdd func(i,j int)int
+	var strAdd func(a,b string)string
+	makeAdd(&intAdd)
+	makeAdd(&strAdd)
+	fmt.Println(intAdd(100,200))
+	fmt.Println(strAdd("Hello, ","world!"))
 }
