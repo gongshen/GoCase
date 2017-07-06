@@ -21,7 +21,6 @@ func main()  {
 		{"Tom",19},
 		{"Miracle",21},
 	}
-	fmt.Printf("%T\n",ByAge{})
 	sort.Sort(ByAge(people))
 	fmt.Println(people)
 }

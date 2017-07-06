@@ -20,3 +20,4 @@
 	- [通用函数模板](https://github.com/gongshen/GoCase/tree/master/reflect/makefunc%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
 7. 接口
 	- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/part1.md)
+	- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
