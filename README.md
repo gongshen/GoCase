@@ -14,5 +14,6 @@
 	- ssh指令
 	- copy指令
 5. 并发和通道
-	- chan_value
+	- [chan_value](https://github.com/gongshen/GoCase/tree/master/goroutine_channel/chan_val)
 6. 反射
+	- [通用函数模板](https://github.com/gongshen/GoCase/tree/master/reflect/makefunc%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
