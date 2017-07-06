@@ -13,3 +13,5 @@
 	- cat指令
 	- ssh指令
 	- copy指令
+5. 并发和通道
+	- chan_value
