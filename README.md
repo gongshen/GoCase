@@ -22,3 +22,6 @@
 7. 接口
 	- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/part1.md)
 	- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
+8. 测试
+	- 性能测试
+	
