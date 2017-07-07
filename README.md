@@ -23,4 +23,4 @@
 	- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
 	- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
 8. 测试
-	- [性能测试]()
+	- [性能测试](https://github.com/gongshen/GoCase/blob/master/testing/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.md)
