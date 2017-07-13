@@ -2,32 +2,28 @@
 ```go
 package main
 
-func Max(a,b int)int {
-	if a>b {
-		return a
-	}else{
-		return b
-	}
-}
-
-func DoubleMax(a,b int) int {
-	return 2*Max(a,b)
+func test()*int  {
+	x:=new(int)
+	*x=0xAABB
+	return x
 }
 
 func main()  {
-	DoubleMax(1,2)
+	println(test())
 }
 ```
-使用内联优化
+禁用内联优化:两个栈帧间需要传递对象，所以在`堆`上分配。
 ```shell
-$ go build -gcflags "-m" -o test main.go
-# command-line-arguments
-.\main.go:5: can inline Max
-.\main.go:13: can inline DoubleMax
-.\main.go:14: inlining call to Max
-.\main.go:17: can inline main
-.\main.go:18: inlining call to DoubleMax
-.\main.go:18: inlining call to Max
+$ go build -gcflags "-l" -o test main.go
+$ go tool objdump -s "main\.test" test
+...
+main.go:4       0x44dedf        e80ce4fbff              CALL runtime.newobject(SB)
+...
+```
+使用内联优化后:test函数就等于是`main栈帧`内的局部变量，无需`堆`分配，从而提升性能。
+```shell
+$ go build -o test main.go
+$ go tool objdump -s "main\.main" test 
 ```
 # 2.条件编译
 在源文件(.go, .h, .c, .s 等)头部添加 "+build" 注释，指示编译器检查相关环境变量。多个约束标记会合并处理。其中空格表示 OR，逗号 AND，感叹号 NOT。
