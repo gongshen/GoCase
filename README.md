@@ -25,3 +25,5 @@
 8. 测试
 	- [性能测试](https://github.com/gongshen/GoCase/blob/master/testing/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.md)
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
+9. defer和闭包
+	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
