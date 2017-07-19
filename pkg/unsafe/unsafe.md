@@ -6,7 +6,8 @@ v:=unsafe.Pointer(&s[0])
 ## 2.从内存构造slice
 ```go
 var ptr unsafe.Pointer
-s:=(*[1<<20]byte)(ptr)
+s:=(*[1<<20]byte)(unsafe.Pointer(ptr))[:200]
+//构建了一个200元素的slice
 ```
 ## 3.使用reflect.SliceHeader来构造slice
 ```go
