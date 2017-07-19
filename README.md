@@ -4,7 +4,7 @@
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
-	2. 算法的深入了解
+2. 算法的深入了解
 	- [递归算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95)
 	- [银行家算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95)
 3. 代理
@@ -28,6 +28,5 @@
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
 9. defer和闭包
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
-	
 10. 各包的自我理解
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
