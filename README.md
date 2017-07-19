@@ -28,3 +28,5 @@
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
 9. defer和闭包
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
+10.各包的自我理解
+	- [unsafe]()
