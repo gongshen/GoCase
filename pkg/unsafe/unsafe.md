@@ -80,3 +80,44 @@ func main()  {
 	fmt.Println(s)
 }
 ```
+## 6.测试[]byte普通转化string和伪造string的性能差异：
+```go
+package main
+
+import (
+	"testing"
+	"unsafe"
+)
+
+//测试[]byte转化为string
+func Test_ByteString(t *testing.T)  {
+	var x=[]byte("Hello World!")
+	var y=*(*string)(unsafe.Pointer(&x))
+	var z=string(x)
+	if z!=y{
+		t.Fail()
+	}
+}
+
+func Benchmark_Normal(b *testing.B)  {
+	var x=[]byte("Hello World!")
+	for i:=0;i<b.N;i++{
+		_=string(x)
+	}
+}
+
+func Benchmark_ByteString(b *testing.B)  {
+	var x=[]byte("Hello World!")
+	for i:=0;i<b.N;i++{
+		_=*(*string)(unsafe.Pointer(&x))
+	}
+}
+```
+结果对比：
+```shell
+$ go test -bench .
+Benchmark_Normal-4              100000000               10.4 ns/op
+Benchmark_ByteString-4          2000000000               0.37 ns/op
+PASS
+ok      Exp3  1.868s
+```
