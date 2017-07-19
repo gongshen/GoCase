@@ -114,6 +114,7 @@ func Benchmark_ByteString(b *testing.B)  {
 }
 ```
 结果对比：
+因为普通转化需要拷贝
 ```shell
 $ go test -bench .
 Benchmark_Normal-4              100000000               10.4 ns/op
