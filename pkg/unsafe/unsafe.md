@@ -123,3 +123,31 @@ Benchmark_ByteString-4          2000000000               0.37 ns/op
 PASS
 ok      Exp3  1.868s
 ```
+## 7.unsafe.Offsetof()和unsafe.Sizeof()
+`Offsetof`参数字段必须是`x.f`,返回f相对于x的偏移量。
+`Sizeof`表示操作数在内存中的字节大小。
+```go
+package main
+
+import (
+	"fmt"
+	"unsafe"
+)
+
+func main() {
+	var s= struct {
+		a int
+		b int
+		c int
+		d int
+	}{0,0,0,0}
+	p:=unsafe.Pointer(&s)
+	pb:=(*int)(unsafe.Pointer(uintptr(p)+unsafe.Offsetof(s.c)))
+	*pb=20
+	fmt.Println(s)
+}
+```
+结果：
+```shell
+{0 0 20 0}
+```
