@@ -188,3 +188,13 @@ func main() {
 		"x.c", unsafe.Sizeof(x.c), unsafe.Alignof(x.c), unsafe.Offsetof(x.c))
 }
 ```
+结果：
+```go
+Row                           Sizeof                        Alignof(对齐倍数)                 Offsetof(偏移量)                                     
+x                             32                            8                                                                               
+x.a                           1                             1                             0                                                 
+x.b                           2                             2                             2                                                 
+x.c                           24                            8                             8                                                 
+
+Process finished with exit code 0
+```
