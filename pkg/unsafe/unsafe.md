@@ -151,3 +151,40 @@ func main() {
 ```shell
 {0 0 20 0}
 ```
+## 8.一个struct变量的内存地址分配
+一个结构体变量 x 以及其在64位机器上的典型的内存. 灰色区域是空洞.
+```go
+var x struct{
+	a bool
+	b int16
+	c []int
+}
+```
+![struct](https://github.com/gongshen/GoCase/blob/master/pic/struct.png)
+```go
+package main
+
+import (
+	"fmt"
+	"unsafe"
+)
+
+func main() {
+
+	var x struct {
+		a bool
+		b int16
+		c []int
+	}
+	fmt.Printf("%-30s%-30s%-30s%-50s\n",
+		"Row", "Sizeof", "Alignof(对齐倍数)", "Offsetof(偏移量)")
+	fmt.Printf("%-30s%-30d%-30d%-50s\n",
+		"x", unsafe.Sizeof(x), unsafe.Alignof(x), "")
+	fmt.Printf("%-30s%-30d%-30d%-50d\n",
+		"x.a", unsafe.Sizeof(x.a), unsafe.Alignof(x.a), unsafe.Offsetof(x.a))
+	fmt.Printf("%-30s%-30d%-30d%-50d\n",
+		"x.b", unsafe.Sizeof(x.b), unsafe.Alignof(x.b), unsafe.Offsetof(x.b))
+	fmt.Printf("%-30s%-30d%-30d%-50d\n",
+		"x.c", unsafe.Sizeof(x.c), unsafe.Alignof(x.c), unsafe.Offsetof(x.c))
+}
+```
