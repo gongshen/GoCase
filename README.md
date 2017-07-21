@@ -31,6 +31,6 @@
 10. 各包的自我理解
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 11. 杂项
-	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/inline.md)
-	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/condition_complication.md)
-	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/data_competition.md)
+	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
+	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
+	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
