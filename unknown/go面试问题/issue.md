@@ -140,9 +140,9 @@ func calc(index string, a, b int) int {
 func main() {
 	a := 1                                             	//line 1
 	b := 2                                             	//2
-	defer calc("1", a, calc("10", a, b))  				//3
+	defer calc("1", a, calc("10", a, b))  		 //3
 	a = 0                                              	//4
-	defer calc("2", a, calc("20", a, b))  				//5
+	defer calc("2", a, calc("20", a, b))  		 //5
 	b = 1                                              	//6
 }
 ```
@@ -217,5 +217,37 @@ func main() {
 
 # 7、下面代码有什么问题？
 ```go
+type UserAges struct {
+	ages map[string]int
+	sync.Mutex
+}
 
+func (ua *UserAges) Add(name string, age int) {
+	ua.Lock()							//ua.RLock
+	ua.ages=make(map[string]int)
+	defer ua.Unlock()					//defer ua.RUnlock
+	ua.ages[name] = age
+}
+
+func (ua *UserAges) Get(name string) int {
+	if age, ok := ua.ages[name]; ok {
+		return age
+	}
+	return -1
+}
 ```
+**解析:**
+> 1、最大的一个问题：
+map是为nil的。并没有初始化，而nil的map不能赋值。是map是为nil的。并没有初始化，而nil的map不能赋值。
+
+```go
+func (ua *UserAges) Add(name string, age int) {
+	ua.RLock()
+	ua.ages=make(map[string]int)
+	defer ua.RUnlock()
+	ua.ages[name] = age
+}
+```
+
+> 2、第二个问题：
+对于读没有加锁，可能会引发panic。将`sync.Mutex`改为读写锁`sync.RWMutex`。
