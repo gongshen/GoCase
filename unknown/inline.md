@@ -24,3 +24,6 @@ main.go:4       0x44dedf        e80ce4fbff              CALL runtime.newobject(S
 $ go build -o test main.go
 $ go tool objdump -s "main\.main" test 
 ```
+
+`注意`：
+> 对于`局部变量`，编译器是分配在栈中，而不是堆中，这样效率更高。
