@@ -68,3 +68,37 @@ func pase_student() map[string]student {
 	return m
 }
 ```
+# 2、下面代码有什么输出，为什么。
+```go
+package main
+
+import (
+	"fmt"
+	"runtime"
+	"sync"
+)
+
+func main() {
+	runtime.GOMAXPROCS(1)
+	wg := sync.WaitGroup{}
+	wg.Add(20)
+	for i := 0; i < 10; i++ {
+		go func() {
+			fmt.Println("i: ", i)
+			wg.Done()
+		}()
+	}
+	
+	for i := 0; i < 10; i++ {
+		go func(i int) {
+			fmt.Println("i: ", i)
+			wg.Done()
+		}(i)
+	}
+	
+	wg.Wait()
+}
+```
+**解析:**
+> 第一个for循环遍历：因为闭包默认帮你实现了指针，所以遍历结束，i=10.
+第二个for循环遍历中：因为闭包传入了参数，实现了值拷贝，所以i=0，1，2，... ，9。
