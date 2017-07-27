@@ -2,7 +2,7 @@
 ```txt
 Content-type: multipart/form-data;boundary=18bda0b61d5bec874e64cca1bee33ea1d1e53d5059871dda334488023748
 ```
-1. **Writer**
+### 1. **Writer**
 `multipart.Writer`作用是构造和添加`multipart.Part`。
 ```go
 func main(){
@@ -32,7 +32,7 @@ Content-Disposition: form-data; name="this_is_key"
 this is value
 --630d669802ff7cbdeafdffca6775db4410ac0328ebddc43ac3f6f7d15e16--
 ```
-2. **Reader**
+### 2. **Reader**
 `multipart.NewReader`有两个参数，第一个是需要解析的`[]byte`，第二个是`boundary`值。
 当循环至最后一个`part`，再次`NextPart`的话，`err`会等于`io.EOF`。
 ```go
