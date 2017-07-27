@@ -1,4 +1,4 @@
-multipart是指`multipart/form-data`，这是http协议中的一种`Content-type`，http的body中可以包含很多子类型，可以通过`boundary`的分界线分割。被`boundary`分割的叫做一个`part`。
+## multipart是指`multipart/form-data`，这是http协议中的一种`Content-type`，http的body中可以包含很多子类型，可以通过`boundary`的分界线分割。被`boundary`分割的叫做一个`part`。
 ```txt
 Content-type: multipart/form-data;boundary=18bda0b61d5bec874e64cca1bee33ea1d1e53d5059871dda334488023748
 ```
