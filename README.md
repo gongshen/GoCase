@@ -30,7 +30,7 @@
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
 10. 各包的自我理解
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
-	- [mime]()
+	- [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
 11. 杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
