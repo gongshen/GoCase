@@ -9,6 +9,7 @@ new返回一个指向已清零的指针，而make返回一个复杂结构。
 ![slice](https://github.com/gongshen/GoCase/blob/master/pic/slice.png)
 
 切片的操作不是复制切片指向的元素，而是创建一个新的切片并复用原来切片的`数组`。**所以一个新的切片修改元素会影响原始切片对应的元素。**
+
 ### copy：切片的复制操作，复制的操作可以由“copy”内置函数替代
 ```
 t:=make([]byte,len(s),(cap(s)+1)*2)
