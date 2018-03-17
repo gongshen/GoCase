@@ -28,10 +28,12 @@
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
 9. defer和闭包
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
-10. 各包的自我理解
+10. 文本处理
+	- [yaml](https://github.com/gongshen/GoCase/blob/master/text_prcocess/yaml/main.go)
+11. 各包的自我理解
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 	- [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
-11. 杂项
+12. 杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
