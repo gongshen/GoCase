@@ -5,11 +5,12 @@ func TestArgs(first int,arg ...interface{}){
     fmt.Println(first,arg)
 }
 func main(){
-    nums:=[]int{1,2,3,4,5,6}
+    n:=[]int{1,2,3}
     //TestArgs(1,nums)
-    TestArgs(1,nums...)                //表示将切片打散再传入
+    TestArgs(1,n...)                
+//表示将切片打散再传入：TestArgs(1,n[0],n[1],n[2])
 }
-//cannot use nums (type []int64) as type []interface {} in argument to TestArgs
+// cannot use nums (type []int64) as type []interface {} in argument to TestArgs
 ```
 以上代码出现了类型不匹配的错误
 **原因：**
@@ -19,10 +20,10 @@ func TestArgs(first int,arg ...interface{}){
     fmt.Println(first,arg)
 }
 func main(){
-    nums:=[]interface{}{1,2,3,4,5}
-    TestArgs(1,nums)        
+    n:=[]interface{}{1,2,3}
+    TestArgs(1,n)        
 }
-//1 [[1,2,3,4,5]]
+//1 [[1,2,3]]
 ```
 **小结：**
 - TestArgs(1,nums...)    //将nums打散再传入
