@@ -12,6 +12,7 @@
 	- 反向代理
 	- HTTPS隧道技术
 4. 模拟指令
+	- [echo指令](https://github.com/gongshen/GoCase/blob/master/command/echo.go)
 	- cat指令
 	- ssh指令
 	- copy指令
