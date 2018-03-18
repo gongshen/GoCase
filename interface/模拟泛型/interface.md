@@ -25,7 +25,7 @@ func main()  {
 	fmt.Println(people)
 }
 ```
-在上面的例子中，Sort方法的参数是Interface,ByAge实现了Interface的3中方法，就等于实现了Interface。
+在上面的例子中，Sort方法的参数是Interface,ByAge实现了Interface的3中方法，就等于实现了Interface，使用Sort函数进行排序，实现了泛型编程。
 ```go
 type Interface interface {
         Len() int
