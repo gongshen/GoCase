@@ -32,6 +32,7 @@
 10. 文本处理
 	- [yaml](https://github.com/gongshen/GoCase/blob/master/text_prcocess/yaml/main.go)
 11. 各包的自我理解
+	- [time](https://github.com/gongshen/GoCase/blob/master/pkg/time/calculate_run_time.go)
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 	- [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
 12. 杂项
