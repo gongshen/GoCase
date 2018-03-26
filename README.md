@@ -4,7 +4,8 @@
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
-		- [函数及方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
+		- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
+		- [方法](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/accessable.md)
 2. 算法的深入了解
 	- [递归算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95)
 	- [银行家算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95)
@@ -41,5 +42,4 @@
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
 	- [go面试问题与理解](https://github.com/gongshen/GoCase/blob/master/unknown/go%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/issue.md)
-	- [可寻址值和不可寻址值调用方法](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/accessable.md)
 	- [不定长变参](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/indefinite_variable.md)
