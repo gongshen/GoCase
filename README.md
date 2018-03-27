@@ -9,6 +9,7 @@
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
 		- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
 		- [方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/accessable.md)
+	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
 2. 算法的深入了解
 	- [递归算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95)
 	- [银行家算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95)
@@ -29,14 +30,16 @@
 7. 测试
 	- [性能测试](https://github.com/gongshen/GoCase/blob/master/testing/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.md)
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
-8. defer和闭包
-	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
-9. 文本处理
+8. 文本处理
 	- [yaml](https://github.com/gongshen/GoCase/blob/master/text_prcocess/yaml/main.go)
-10. 各包的自我理解
+9. 各包的自我理解
 	- [time](https://github.com/gongshen/GoCase/blob/master/pkg/time/calculate_run_time.go)
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 	- [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
+10. 流程控制
+	- [for]
+	- [switch]
+	
 11. 杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
