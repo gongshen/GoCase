@@ -3,6 +3,9 @@
 1. 数据结构
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
+	- 接口
+		- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
+		- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
 		- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
 		- [方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/accessable.md)
@@ -23,21 +26,18 @@
 6. 反射
 	- [通用函数模板](https://github.com/gongshen/GoCase/tree/master/reflect/makefunc%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
 	- [动态调用函数](https://github.com/gongshen/GoCase/blob/master/reflect/%E5%8A%A8%E6%80%81%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95/main.go)
-7. 接口
-	- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
-	- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
-8. 测试
+7. 测试
 	- [性能测试](https://github.com/gongshen/GoCase/blob/master/testing/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.md)
 	- [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
-9. defer和闭包
+8. defer和闭包
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
-10. 文本处理
+9. 文本处理
 	- [yaml](https://github.com/gongshen/GoCase/blob/master/text_prcocess/yaml/main.go)
-11. 各包的自我理解
+10. 各包的自我理解
 	- [time](https://github.com/gongshen/GoCase/blob/master/pkg/time/calculate_run_time.go)
 	- [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 	- [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
-12. 杂项
+11. 杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
