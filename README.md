@@ -4,8 +4,8 @@
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
 	- 接口
-		- [接口是什么](https://github.com/gongshen/GoCase/blob/master/interface/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
-		- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/interface/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
+		- [接口是什么](https://github.com/gongshen/GoCase/blob/master/data_structure/%E6%8E%A5%E5%8F%A3/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
+		- [模拟泛型](https://github.com/gongshen/GoCase/blob/master/data_structure/%E6%8E%A5%E5%8F%A3/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
 		- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
 		- [方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/accessable.md)
