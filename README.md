@@ -9,7 +9,7 @@
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
 		- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
 		- [方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/accessable.md)
-	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/defer_closure/defer.md)
+	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/data_structure/defer_closure/defer.md)
 2. 算法的深入了解
 	- [递归算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95)
 	- [银行家算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95)
