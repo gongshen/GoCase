@@ -40,17 +40,17 @@
 	- [for]
 	- [switch]
 11. Linux
-	- [要点]()
+	- [要点](https://github.com/gongshen/GoCase/blob/master/linux/%E8%A6%81%E7%82%B9.md)
 	- 正则表达式
-		+ [基本的正则表达式]()
-		+ [扩展的正则表达式]()
+		+ [基本的正则表达式](https://github.com/gongshen/GoCase/blob/master/regex_expression/%E5%9F%BA%E6%9C%AC%E6%AD%A3%E5%88%99.md)
+		+ [扩展的正则表达式](https://github.com/gongshen/GoCase/blob/master/regex_expression/%E6%89%A9%E5%B1%95%E6%AD%A3%E5%88%99.md)
 	- 指令
-		+ [awk]()
-		+ [xargs]()
+		+ [awk](https://github.com/gongshen/GoCase/blob/master/linux/instruction/awk.md)
+		+ [xargs](https://github.com/gongshen/GoCase/blob/master/linux/instruction/xargs.md)
 
 12. MySQL
-	- [安装]()
-	- [配置]()
+	- [安装](https://github.com/gongshen/GoCase/blob/master/mysql/1.mysql%E7%9A%84%E5%AE%89%E8%A3%85/install.md)
+	- [配置](https://github.com/gongshen/GoCase/blob/master/mysql/2.%E9%85%8D%E7%BD%AE/%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81%E7%9A%84%E6%93%8D%E4%BD%9C.md)
 13. Go杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
@@ -58,4 +58,4 @@
 	- [go面试问题与理解](https://github.com/gongshen/GoCase/blob/master/unknown/go%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/issue.md)
 	- [不定长变参](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/indefinite_variable.md)
 	
-14. [公钥]()
+14. [公钥](https://raw.githubusercontent.com/gongshen/GoCase/master/id_rsa.pub)
