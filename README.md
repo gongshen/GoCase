@@ -1,5 +1,4 @@
 # Little By Little！
-
 1. 数据结构
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
@@ -40,10 +39,23 @@
 10. 流程控制
 	- [for]
 	- [switch]
-	
-11. 杂项
+11. Linux
+	- [要点]()
+	- 正则表达式
+		+ [基本的正则表达式]()
+		+ [扩展的正则表达式]()
+	- 指令
+		+ [awk]()
+		+ [xargs]()
+
+12. MySQL
+	- [安装]()
+	- [配置]()
+13. Go杂项
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
 	- [go面试问题与理解](https://github.com/gongshen/GoCase/blob/master/unknown/go%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/issue.md)
 	- [不定长变参](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/indefinite_variable.md)
+	
+14. [公钥]()
