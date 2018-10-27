@@ -223,9 +223,8 @@ type UserAges struct {
 }
 
 func (ua *UserAges) Add(name string, age int) {
-	ua.Lock()							//ua.RLock
-	ua.ages=make(map[string]int)
-	defer ua.Unlock()					//defer ua.RUnlock
+	ua.Lock()							
+	defer ua.Unlock()					
 	ua.ages[name] = age
 }
 
@@ -238,16 +237,12 @@ func (ua *UserAges) Get(name string) int {
 ```
 **解析:**
 > 1、最大的一个问题：
-map是为nil的。并没有初始化，而nil的map不能赋值。是map是为nil的。并没有初始化，而nil的map不能赋值。
+map是为nil的。并没有初始化，而nil的map不能赋值。
 
 ```go
-func (ua *UserAges) Add(name string, age int) {
-	ua.RLock()
+func NewUA()*UserAges{
+	ua:=&UserAges{}
 	ua.ages=make(map[string]int)
-	defer ua.RUnlock()
-	ua.ages[name] = age
+	return ua
 }
 ```
-
-> 2、第二个问题：
-对于读没有加锁，可能会引发panic。将`sync.Mutex`改为读写锁`sync.RWMutex`。
