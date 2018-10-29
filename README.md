@@ -1,11 +1,12 @@
 # Little By Little！
 1. 数据结构
 	- [单链表](https://github.com/gongshen/GoCase/tree/master/data_structure/%E5%8D%95%E9%93%BE%E8%A1%A8)
+	
 	- [二叉树](https://github.com/gongshen/GoCase/tree/master/data_structure/%E4%BA%8C%E5%8F%89%E6%A0%91)
 	
 	- [基本数据结构](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/base.md)
 		
-
+	- [栈](https://github.com/gongshen/GoCase/tree/master/data_structure/stack)
 2. Go基础
 	- 接口
 		+ [接口是什么](https://github.com/gongshen/GoCase/blob/master/data_structure/%E6%8E%A5%E5%8F%A3/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
