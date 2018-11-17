@@ -81,9 +81,10 @@
 	
 9. [公钥](https://raw.githubusercontent.com/gongshen/GoCase/master/id_rsa.pub)
 
-10. 分布式
+10. [分布式](https://blog.csdn.net/chdhust/article/details/52651741)
     - 一致性算法
-        + [Raft]()
+        + [NWR]()
+        + [Raft](thesecretlivesofdata.com/raft/)
 11. Project
 	- [sorm](https://github.com/gongshen/sorm)
 	- [并发安全的字典]()
