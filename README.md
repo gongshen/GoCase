@@ -18,7 +18,7 @@
 	- [panic和recover](https://github.com/gongshen/GoCase/blob/master/data_structure/panic%E5%92%8Crecover/panic_recover.md)
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
-	- [go源码的编译连接]()
+	- [go源码的编译连接](https://github.com/gongshen/GoCase/blob/master/pic/go-complie-link.png)
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
 	- [不定长变参](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/indefinite_variable.md)
 	- [channel&gorouting](https://github.com/gongshen/GoCase/tree/master/goroutine_channel/chan_val)
