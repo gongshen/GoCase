@@ -12,29 +12,19 @@
 		+ [接口是什么](https://github.com/gongshen/GoCase/blob/master/data_structure/%E6%8E%A5%E5%8F%A3/%E4%BB%80%E4%B9%88%E6%98%AF%E6%8E%A5%E5%8F%A3/interface.md)
 		
 		+ [模拟泛型](https://github.com/gongshen/GoCase/blob/master/data_structure/%E6%8E%A5%E5%8F%A3/%E6%A8%A1%E6%8B%9F%E6%B3%9B%E5%9E%8B/interface.md)
-		
 	- [函数](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/function.md)
-	
 	- [方法](https://github.com/gongshen/GoCase/blob/master/data_structure/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/accessable.md)
-	
 	- [defer和闭包](https://github.com/gongshen/GoCase/blob/master/data_structure/defer_closure/defer.md)
-	
 	- [panic和recover](https://github.com/gongshen/GoCase/blob/master/data_structure/panic%E5%92%8Crecover/panic_recover.md)
-	
 	- [内联优化](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/inline.md)
-	
 	- [条件编译](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/condition_complication.md)
-	
+	- [go源码的编译连接]()
 	- [数据竞争检查](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/data_competition.md)
-	
 	- [不定长变参](https://github.com/gongshen/GoCase/blob/master/unknown/%E6%9D%82%E9%A1%B9/indefinite_variable.md)
-	
 	- [channel&gorouting](https://github.com/gongshen/GoCase/tree/master/goroutine_channel/chan_val)
-	
 	- 反射
 		+ [通用函数模板](https://github.com/gongshen/GoCase/tree/master/reflect/makefunc%E9%80%9A%E7%94%A8%E6%A8%A1%E6%9D%BF)
 		+ [动态调用函数](https://github.com/gongshen/GoCase/blob/master/reflect/%E5%8A%A8%E6%80%81%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95/main.go)
-		
 	- package
 	
 		+ [time](https://github.com/gongshen/GoCase/blob/master/pkg/time/calculate_run_time.go)
@@ -42,12 +32,11 @@
 		+ [unsafe](https://github.com/gongshen/GoCase/blob/master/pkg/unsafe/unsafe.md)
 		
 		+ [mime](https://github.com/gongshen/GoCase/blob/master/pkg/mime/multipart.md)
-	
 	- 测试
 		+ [性能测试](https://github.com/gongshen/GoCase/blob/master/testing/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95.md)
 		
 		+ [单元测试](https://github.com/gongshen/GoCase/blob/master/testing/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md)
-		
+	
 3. 算法的深入了解
 	- [递归算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95)
 	- [银行家算法](https://github.com/gongshen/GoCase/tree/master/algorithm/%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95)
@@ -84,7 +73,7 @@
 10. 分布式
     - 一致性算法
         + [Raft]()
-        
+    
 11. Docker
     - [Docker的安装](https://github.com/gongshen/GoCase/blob/master/docker/Docker%E7%9A%84%E5%AE%89%E8%A3%85/%E5%AE%89%E8%A3%85.md)
     - [使用镜像](https://github.com/gongshen/GoCase/tree/master/docker/%E4%BD%BF%E7%94%A8%E9%95%9C%E5%83%8F)
