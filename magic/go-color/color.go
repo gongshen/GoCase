@@ -5,10 +5,16 @@ import "fmt"
 const (
 	red = uint8(91 + iota)
 	green
+	yellow
+	blue
+	magenta
+	cyan_blue
+	white
+	gray
 )
 
 func main() {
-	Print(green)
+	Print(white)
 }
 
 func Print(color uint8) {
