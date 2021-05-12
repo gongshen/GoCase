@@ -1,0 +1,88 @@
+使用runtime.SetFinalizer后，如果GC遇到不再被使用的资源，且使用了SetFinalizer，将其标记为可达状态，等下次GC就会回收掉。
+```go
+package main
+
+import (
+	"runtime"
+	"time"
+)
+
+type Cache = *wrapper
+
+type wrapper struct {
+	*cache
+}
+
+type cache struct {
+	content   string
+	stopCh    chan struct{}
+	onStopped func()
+}
+
+func newCache() *cache {
+	return &cache{
+		content: "some thing",
+		stopCh:  make(chan struct{}),
+	}
+}
+
+func NewCache() Cache {
+	w := &wrapper{
+		cache: newCache(),
+	}
+	go w.cache.run()
+	runtime.SetFinalizer(w, (*wrapper).stop)
+	return w
+}
+
+func (w *wrapper) stop() {
+	w.cache.stop()
+}
+
+func (c *cache) run() {
+	ticker := time.NewTicker(time.Second)
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ticker.C:
+			// do some thing
+		case <-c.stopCh:
+			if c.onStopped != nil {
+				c.onStopped()
+			}
+			return
+		}
+	}
+}
+
+func (c *cache) stop() {
+	close(c.stopCh)
+}
+```
+
+```go
+func TestFinalizer(t *testing.T) {
+	w := NewCache()
+	var cnt int = 0
+	stopped := make(chan struct{})
+	w.onStopped = func() {
+		cnt++
+		close(stopped)
+	}
+
+	fmt.Println(cnt)
+
+	w = nil
+
+	runtime.GC()
+
+	select {
+	case <-stopped:
+	case <-time.After(10 * time.Second):
+		t.Fail()
+	}
+
+	fmt.Println(cnt)
+}
+```

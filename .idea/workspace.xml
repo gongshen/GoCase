@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87ddb545-ac02-4229-ae4b-244891d7aaa3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/etcd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unknown/杂项/finalizer" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,5 +73,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="445" y="257" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1620821457198">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="445" y="257" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1620821457198" />
   </component>
 </project>
