@@ -246,3 +246,26 @@ func NewUA()*UserAges{
 	return ua
 }
 ```
+
+# 8、new和make的区别
+new是分配内存并且初始化，返回指针
+make是分配内存空间并且初始化，返回引用
+引用类型在Golang中并不是引用传递（参数都是值传递）
+```go
+func main() {
+	a:=make([]int,0,5)
+	a = append(a,[]int{0, 1}...)
+	update(a)
+	fmt.Println(a)
+	// 这边显示[10 1]虽然内存里面保存的是[10 1 3 4 5]，但是len还是2，所以只会显示[10 1]
+}
+
+func update(s []int) {
+    // 这边的s是拷贝在函数main的参数空间中，但是内部指向的内存地址是同一个
+	s[0] = 10
+	s=append(s,3,4,5)
+
+	s=append(s,6)
+	// 这边指向的内存空间改变了，因为超出了cap容量
+}
+```
